@@ -1,0 +1,63 @@
+using System;
+
+namespace calculette
+{
+    class Program
+    {
+        public static void multiplication(int num1, int num2)
+        {
+
+            Console.WriteLine(num1 * num2);
+        }
+        public static void soustraction(int num1, int num2)
+        {
+            Console.WriteLine(num1 - num2);
+
+        }
+        public static void division(int num1, int num2)
+        {
+            Console.WriteLine(num1 / num2);
+        }
+        public static void modulo(int num1, int num2)
+        {
+            Console.WriteLine(num1 % num2);
+        }
+        public static void addition(int num1, int num2)
+        {
+            Console.WriteLine(num1 + num2);
+        }
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("entre le premiere operande");
+                int first = int.Parse(Console.ReadLine());
+                Console.WriteLine("entre le second operande");
+                int second = int.Parse(Console.ReadLine());
+                Console.WriteLine("quel opérande choisis tu ?");
+                string oper = Console.ReadLine();
+
+                if (oper == "add")
+                {
+                    addition(first, second);
+                }
+                else if (oper == "multi")
+                {
+                    multiplication(first, second);
+                }
+                else if (oper == "modulo")
+                {
+                    modulo(first, second);
+                }
+                else if (oper == "soustrac")
+                {
+                    soustraction(first, second);
+                }
+                else if (oper == "division")
+                {
+                    division(first, second);
+                }
+            }
+        }
+    }
+}
