@@ -32,9 +32,9 @@ namespace calculette
         {
             while (true)
             {
-                Console.Write("entre le premiere operande : ");
+                Console.Write("entre le premiere chiffre : ");
                 float first = float.Parse(Console.ReadLine());
-                Console.Write("entre le second operande : ");
+                Console.Write("entre le second chiffre : ");
                 float second = float.Parse(Console.ReadLine());
                 Console.Write("quel opérande choisis tu ? ");
                 string oper = Console.ReadLine();
